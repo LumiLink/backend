@@ -8,7 +8,7 @@ public abstract class Device {
 
     }
 
-    public void sendData(){
+    final public void sendData(Object data){
 
     }
 }

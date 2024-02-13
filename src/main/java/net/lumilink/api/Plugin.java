@@ -1,9 +1,6 @@
 package net.lumilink.api;
 
-public interface Plugin {
-    void onStart();
-    void onDisable();
-
-    String getName();
-
+public abstract class Plugin {
+    void onStart(){}
+    void onDisable(){}
 }
