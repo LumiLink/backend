@@ -1,14 +1,14 @@
 package net.lumilink.api.devices;
 
-public interface Device {
+public abstract class Device {
 
-    void onConnection();
-    void onDisconnection();
+    String name;
 
-    boolean isConnected();
+    public void onTrigger(){
 
-    String getName();
+    }
 
-    String getId();
-    String getDescription();
+    public void sendData(){
+
+    }
 }
