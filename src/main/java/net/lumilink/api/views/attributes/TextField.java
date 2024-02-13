@@ -1,10 +1,13 @@
 package net.lumilink.api.views.attributes;
 
-public abstract class TextField {
+import net.lumilink.api.views.View;
+
+public abstract class TextField extends ViewAttribute {
     private String text;
     int size = 1;
 
-    public TextField(String text) {
+    public TextField(String id, String text) {
+        super(id);
         this.text = text;
     }
 
