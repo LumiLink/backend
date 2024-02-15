@@ -1,5 +1,6 @@
 package net.lumilink.api;
 
+import net.lumilink.api.devices.DeviceType;
 import net.lumilink.api.events.EventHandler;
 
 public abstract class Plugin {
@@ -10,5 +11,9 @@ public abstract class Plugin {
 
     public EventHandler getEventHandler() {
         return eventHandler;
+    }
+
+    public final void registerDeviceType(DeviceType type){
+
     }
 }
