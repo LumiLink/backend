@@ -1,7 +1,5 @@
 package net.lumilink.api.devices;
 
-import net.lumilink.api.Plugin;
-
 public abstract class DeviceType implements DeviceTypeObserver {
 
     private String name;
@@ -17,5 +15,9 @@ public abstract class DeviceType implements DeviceTypeObserver {
 
     public DeviceType(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }
